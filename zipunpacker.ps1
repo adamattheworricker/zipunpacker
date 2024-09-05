@@ -12,7 +12,7 @@ foreach ($zip in $zips)
        Expand-Archive $zip -Force 
     }
 
-Write-Host "Files unzipped, could you like to delete the zip files? (Y/N)"
+Write-Host "Files unzipped, would you like to delete the zip files? (Y/N)"
 $response = Read-Host
 
 $response = $response.ToUpper()
